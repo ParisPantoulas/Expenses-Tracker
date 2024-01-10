@@ -1,0 +1,45 @@
+{
+  "people": [
+    {
+      "name": "Paris",
+      "balance": 0,
+      "Indivbalance": 0,
+      "Groupbalance": 0,
+      "profileId": 0,
+      "groups": [
+        "Naxos",
+        "Paros",
+        "London2023"
+      ],
+      "id": "78dc"
+    },
+    {
+      "name": "Panos",
+      "profileId": 1,
+      "groups": [
+        "Naxos",
+        "Paros"
+      ],
+      "debt": 0,
+      "owes": 0,
+      "total": 0,
+      "id": "d5dc"
+    }
+  ],
+  "transactions": [
+    {
+      "profileId": 0,
+      "transactionId": 0,
+      "amount": 0,
+      "details": null,
+      "id": "2101"
+    },
+    {
+      "profileId": 1,
+      "transactionId": 1,
+      "amount": 100,
+      "details": null,
+      "id": "7853"
+    }
+  ]
+}
