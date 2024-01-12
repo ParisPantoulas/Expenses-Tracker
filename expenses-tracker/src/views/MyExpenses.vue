@@ -1,13 +1,7 @@
 <template>
-    <div>
-        My Expenses
-    </div>
+    <IndividualExpenses />
 </template>
 
 <script setup>
-
+import IndividualExpenses from '@/components/IndividualExpenses.vue'
 </script>
-
-<style scoped>
-/* Add any additional styles or overrides here if needed */
-</style>

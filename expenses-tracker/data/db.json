@@ -29,17 +29,42 @@
   "transactions": [
     {
       "profileId": 0,
-      "transactionId": 0,
-      "amount": 0,
-      "details": null,
-      "id": "2101"
+      "amount": 1100,
+      "title": "Εισόδημα",
+      "details": "Μισθός",
+      "id": "3cfd"
+    },
+    {
+      "profileId": 0,
+      "amount": 1000,
+      "title": "Επιστροφή Φόρου",
+      "details": "Επιστροφή φόρου 2021",
+      "id": "78ea"
+    },
+    {
+      "profileId": 0,
+      "amount": -150,
+      "title": "Supermarket",
+      "details": "Έξοδα Supermarket 20/12",
+      "id": "878f"
+    },
+    {
+      "profileId": 0,
+      "amount": -450,
+      "title": "Ρούχα",
+      "details": "Ψώνια Χριστουγέννων"
+    },
+    {
+      "profileId": 0,
+      "amount": -200,
+      "title": "Επισκευή αυτοκινήτου",
+      "details": "Επισκευή αυτοκινήτου"
     },
     {
       "profileId": 1,
-      "transactionId": 1,
       "amount": 100,
       "details": null,
-      "id": "7853"
+      "id": "2ad3"
     }
   ]
 }

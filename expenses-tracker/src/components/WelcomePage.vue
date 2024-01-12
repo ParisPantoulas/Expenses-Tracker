@@ -5,7 +5,7 @@
         Welcome!
     </h1>
     <h1 class="text-4xl font-bold mb-4" v-else>
-        Welcome back!
+        Welcome back {{ firstElement.name }}!
     </h1>
 
     <div v-if="firstElement.name === null" class="mt-4">
@@ -41,7 +41,6 @@ try {
     const data = await response.json();
     people.value = data;
     firstElement.value = people.value[0];
-    console.log('People are here');
 } catch (error) {
     console.error('Error fetching data:', error);
 }
@@ -69,7 +68,3 @@ try {
 }
 };
 </script>
-
-<style scoped>
-/* Add any additional styles or overrides here if needed */
-</style>
