@@ -29,6 +29,7 @@
         v-model="members[index - 1]"
         :placeholder="'Member ' + index"
         required
+        maxlength="10"
         class="w-full p-2 border border-gray-300 rounded-md mb-4"
         >
     </div>

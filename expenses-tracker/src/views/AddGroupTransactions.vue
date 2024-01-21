@@ -26,16 +26,16 @@
 
     <div class="mb-4">
       <label class="block text-lg font-bold mb-2">Who paid?</label>
-      <select v-model="selectedPayer" required class="border border-gray-300 p-2 w-full">
+      <select v-model="selectedPayer" class="border border-gray-300 p-2 w-full">
         <option disabled>Select payer</option>
-        <option v-for="member in group.members" :key="member" :value="member">{{ member }}</option>
+        <option v-for="member in group.members" :key="member" :value="member" required>{{ member }}</option>
       </select>
     </div>
 
     <div class="mb-4">
       <label class="block text-lg font-bold mb-2">Members included in this expense</label>
       <div v-for="member in group.members" :key="member" class="flex items-center mb-2">
-        <input type="checkbox" v-model="selectedMember" :value="member" class="mr-2" />
+        <input type="checkbox" v-model="selectedMember" :value="member" class="mr-2"/>
         <span>{{ member }}</span>
       </div>
     </div>
@@ -44,6 +44,10 @@
       <button @click="addExpense" class="btn">
         Add this Expense
       </button>
+    </div>
+
+    <div v-if="errorMessages.length > 0" class="mt-4 text-red-500">
+      <p v-for="message in errorMessages" :key="message">{{ message }}</p>
     </div>
   </div>
 </template>
@@ -61,6 +65,7 @@ const amount = ref(0);
 const lastEid = ref(0);
 const selectedPayer = ref(null);
 const selectedMember = ref([]);
+const errorMessages = ref([]);
 
 onMounted(async () => {
 await load();
@@ -81,6 +86,25 @@ function findLastEid(expenses) {
 
 
 async function addExpense() {
+  errorMessages.value = [];
+
+  if (!description.value.trim()) {
+    errorMessages.value.push('Name is required.');
+  }
+  if (!amount.value || isNaN(amount.value) || amount.value <= 0) {
+    errorMessages.value.push('Valid Amount is required.');
+  }
+  if (!selectedPayer.value) {
+    errorMessages.value.push('Who paid? is required.');
+  }
+  if (selectedMember.value.length === 0) {
+    errorMessages.value.push('At least one Member must be selected.');
+  }
+
+  if (errorMessages.value.length > 0) {
+    return;
+  }
+
   const newExpense = {
     description: description.value,
     amount: amount.value,

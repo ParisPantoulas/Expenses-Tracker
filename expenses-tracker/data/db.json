@@ -1,134 +1,13 @@
 {
   "appUser": [
     {
-      "name": "Paris",
+      "name": null,
       "balance": 0,
       "Indivbalance": 0,
       "Groupbalance": 0,
       "id": "78dc"
     }
   ],
-  "transactions": [
-    {
-      "amount": 1100,
-      "title": "Εισόδημα",
-      "details": "Μισθός",
-      "id": "3cfd"
-    },
-    {
-      "amount": 1000,
-      "title": "Επιστροφή Φόρου",
-      "details": "Επιστροφή φόρου 2021",
-      "id": "78ea"
-    },
-    {
-      "amount": -150,
-      "title": "Supermarket",
-      "details": "Έξοδα Supermarket 20/12",
-      "id": "878f"
-    },
-    {
-      "amount": -450,
-      "title": "Ρούχα",
-      "details": "Ψώνια Χριστουγέννων",
-      "id": "50b6"
-    },
-    {
-      "amount": -200,
-      "title": "Επισκευή αυτοκινήτου",
-      "details": "Επισκευή αυτοκινήτου",
-      "id": "eee6"
-    },
-    {
-      "id": "aad6",
-      "title": "Καρέκλα",
-      "details": "Αγόρα καρέκλας γραφείου",
-      "amount": -150
-    }
-  ],
-  "groups": [
-    {
-      "name": "Naxos",
-      "members": [
-        "Paris",
-        "Panos",
-        "Stefanos",
-        "Vivi"
-      ],
-      "expenses": [
-        {
-          "description": "Food",
-          "amount": 160,
-          "paidBy": "Paris",
-          "paidFor": [
-            "Paris",
-            "Stefanos",
-            "Panos"
-          ],
-          "eid": 1
-        },
-        {
-          "description": "Bar",
-          "amount": 120,
-          "paidBy": "Panos",
-          "paidFor": [
-            "Paris",
-            "Panos",
-            "Stefanos",
-            "Vivi"
-          ],
-          "eid": 2
-        },
-        {
-          "description": "Car",
-          "amount": 140,
-          "paidBy": "Panos",
-          "paidFor": [
-            "Paris",
-            "Panos",
-            "Stefanos",
-            "Vivi"
-          ],
-          "eid": 3
-        },
-        {
-          "description": "Fine",
-          "amount": 200,
-          "paidBy": "Vivi",
-          "paidFor": [
-            "Paris",
-            "Panos",
-            "Stefanos",
-            "Vivi"
-          ],
-          "eid": 4
-        }
-      ],
-      "id": "0681"
-    },
-    {
-      "name": "London",
-      "members": [
-        "Paris",
-        "Eva",
-        "Aggelos",
-        "Stamatia"
-      ],
-      "expenses": [
-        {
-          "description": "Food",
-          "amount": 210,
-          "paidBy": "Eva",
-          "paidFor": [
-            "Paris",
-            "Eva",
-            "Aggelos",
-            "Stamatia"
-          ],
-          "eid": 3
-        }
-      ],
-      "id": "f7d5"
-    }
-  ]
+  "transactions": [],
+  "groups": []
 }

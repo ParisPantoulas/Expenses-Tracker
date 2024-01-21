@@ -4,7 +4,7 @@
 
       <div class="flex flex-row justify-between items-center mb-4">
         <h1 class="text-3xl font-semibold text-purple-500">My Expenses</h1>
-        <div class="text-lg text-purple-500">Total Balance: {{ TotalBalance }}</div>
+        <div class="text-lg text-purple-500">Total Individual Balance: {{ TotalBalance }}</div>
       </div>
 
       <h2 class="text-2xl font-semibold mb-4 text-purple-500">Transaction History</h2>
